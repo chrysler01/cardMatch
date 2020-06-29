@@ -1,0 +1,19 @@
+@import '../../../../public/assets/styles/variables.scss';
+
+.game-screen-property {
+    margin: .5rem;
+    font-family: $primary-font;
+    font-size: 2rem;
+    color: $secondary-light;
+    font-weight: bolder;
+    letter-spacing: .05em;
+
+    @media screen and (max-width: $medium-breakpoint) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: $extra-large-breakpoint) {
+        font-size: 4rem;
+    }
+}
+

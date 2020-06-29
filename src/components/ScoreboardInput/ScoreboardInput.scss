@@ -1,0 +1,63 @@
+@import '../../../public/assets/styles/variables.scss';
+
+.scoreboard-input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    & form {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    & * {
+        display: block;
+        text-align: center;
+        margin: .15rem;
+    }
+
+    & label {
+        color: $secondary-light;
+        font-family: $primary-font;
+        text-shadow: 3px 3px 3px $primary-dark;
+        font-size: 4rem;
+
+        @media screen and (max-width: $medium-breakpoint){
+            font-size: 2rem;
+        }
+
+        @media screen and (min-width: $extra-large-breakpoint) {
+            font-size: 8rem;
+        }
+    }
+
+    & button {
+        font-family: $primary-font;
+        font-size: 2rem;
+        color: $secondary-light;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            color: $secondary-color;
+        }
+
+        @media screen and (min-width: $extra-large-breakpoint) {
+            font-size: 6rem;
+        }
+    }
+
+    & input {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        color: $primary-color;
+
+        @media screen and (min-width: $extra-large-breakpoint) {
+            font-size: 6rem;
+        }
+    }
+}
